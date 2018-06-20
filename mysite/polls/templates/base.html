@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+
+
+    <hr>
+    <p>Header</p>
+  <hr>
+    {% block main_content %}
+    {% endblock %}
+{% include 'footer.html' %}
+  </body>
+</html>
